@@ -7,6 +7,9 @@ Este repositorio contiene un backend Django minimal para HarmonySocial creado de
 - Envío de correo de bienvenida por SMTP al registrar un usuario (diseñado para Mailpit en pruebas).
 - Separación de responsabilidades siguiendo una arquitectura limpia: entidades (modelos), repositorios, usecases (casos de uso) y adaptadores web (serializers/views).
 
+[!NOTE]
+> Link para ver el video demostrativo: [Video demostrativo](https://uniempresarial-my.sharepoint.com/:v:/g/personal/dfbernal_uniempresarial_edu_co/ESozwc-ULeNHjtwy8rIr_fEBerj2W-rkr0YOWinTsHKoAA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=2OX6sO)
+
 ## Resumen de lo implementado
 
 - Proyecto Django con app `users`.
