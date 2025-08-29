@@ -199,12 +199,3 @@ package "HarmonySocial Backend" {
 @enduml
 ```
 
-## Notas finales y recomendaciones
-
-- Actualmente el envío de correo se hace de forma síncrona dentro del usecase. Para producción recomiendo enviar correos de forma asíncrona (Celery/RQ o similar) y añadir retries/observabilidad.
-- Si necesitas que prepare la versión asíncrona o un script para poblar datos y comprobar Mailpit automáticamente, lo puedo crear.
-- Revisa `backend_hs/settings.py` para ajustar `EMAIL_*` y las credenciales en entornos reales.
-
----
-
-Si quieres que incluya un diagrama adicional o un README reducido para despliegue, lo añado enseguida.
