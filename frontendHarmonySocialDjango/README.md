@@ -22,14 +22,14 @@ Estructura principal
 
 Contrato mínimo (API)
 
-El frontend espera que el backend exponga las siguientes rutas REST JSON:
+El frontend espera que el backend exponga las siguientes rutas REST JSON (este proyecto ya apunta por defecto al backend Node en `http://127.0.0.1:666`):
 
-- POST /api/auth/login/  — body: { email, password }  → response: { access, refresh, user }
-- POST /api/users/       — body: { email, username, password } → response: 201 Created (user)
+- POST /api/auth/login  — body: { email, username?, password, location? }  → response: { access, refresh, user }
+- POST /api/users       — body: { email, username, password, location? } → response: 201 Created (user)
 
 Config variables
 
-- `REACT_APP_API_BASE_URL` — URL base del backend (por defecto `http://127.0.0.1:8000`).
+-- `REACT_APP_API_BASE_URL` — URL base del backend (por defecto `http://127.0.0.1:666` en esta integración).
 - Variables opcionales para Firebase en `src/firebase.js` (`REACT_APP_FIREBASE_*`).
 
 Instalación y ejecución (Windows PowerShell)

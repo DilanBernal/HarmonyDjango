@@ -1,0 +1,44 @@
+### Register user (with location)
+POST http://localhost:666/api/users
+Content-Type: application/json
+
+{
+  "email": "maria@example.com",
+  "username": "maria",
+  "password": "supersecret",
+  "location": { "lat": -34.6037, "lng": -58.3816 }
+}
+
+### Login
+POST http://localhost:666/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "maria@example.com",
+  "username": "maria",
+  "password": "supersecret",
+  "location": { "lat": -34.6037, "lng": -58.3816 }
+}
+
+### Get users (replace TOKEN)
+GET http://localhost:666/api/users
+Authorization: Bearer {{TOKEN}}
+
+
+### Get single user (replace ID and TOKEN)
+GET http://localhost:666/api/users/{{ID}}
+Authorization: Bearer {{TOKEN}}
+
+
+### Update user (example: add favorite_instrument)
+PUT http://localhost:666/api/users/{{ID}}
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+{
+  "favorite_instrument": "Guitar"
+}
+
+### Delete user
+DELETE http://localhost:666/api/users/{{ID}}
+Authorization: Bearer {{TOKEN}}

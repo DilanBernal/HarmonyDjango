@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './components/Login';
 import Register from './components/Register';
 import Home from './components/Home';
+import LanguageSelector from './components/LanguageSelector';
 
 function RequireAuth({ children }){
   const authed = !!localStorage.getItem('hs_access');
@@ -12,6 +13,7 @@ function RequireAuth({ children }){
 export default function App(){
   return (
     <BrowserRouter>
+  <LanguageSelector />
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />

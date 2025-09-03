@@ -21,6 +21,9 @@ export const extra = {
     "success": "Compte créé",
     "failed": "Échec de la création",
     "have_account": "J'ai déjà un compte"
+  ,
+    "location_title": "Emplacement",
+    "location_help": "Cliquez sur la carte pour sélectionner votre emplacement"
   },
   "home": {
     "title": "Accueil",

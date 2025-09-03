@@ -17,7 +17,8 @@ export default function Login() {
   setLoading(true);
   setError(null);
   try {
-   await vm.login({ email, password });
+   const payload = { email, password };
+   await vm.login(payload);
    navigate("/home");
   } catch (err) {
    setError(err.message || t("login.failed"));
@@ -29,17 +30,7 @@ export default function Login() {
  return (
   <div className="card p-4 m-5 py-5">
    <h3 className="text-center mb-4 fw-bold">{t("login.title")}</h3>
-   <div className="mb-2">
-    <select
-     className="form-select form-select-sm"
-     value={i18n.language}
-     onChange={(e) => i18n.changeLanguage(e.target.value)}
-    >
-     <option value="en">EN</option>
-     <option value="es">ES</option>
-     <option value="fr">FR</option>
-    </select>
-   </div>
+   {/* language selector moved to fixed global component */}
    <form onSubmit={onSubmit} className="d-flex flex-column gap-2">
     <input
      className="form-control"

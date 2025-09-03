@@ -21,6 +21,9 @@ const extras = {
     "success": "Account created",
     "failed": "Registration failed",
     "have_account": "I have an account"
+  ,
+    "location_title": "Location",
+    "location_help": "Click on the map to select your location"
   },
   "home": {
     "title": "Home",

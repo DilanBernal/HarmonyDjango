@@ -1,4 +1,9 @@
-// Placeholder Firebase config. Fill with your project's config if needed for hosting or Firebase services.
+// Firebase is optional for this project. If you do not use Firebase services,
+// you can leave this file as-is. The project will work without Firebase.
+// If you want to enable Firebase, set the REACT_APP_FIREBASE_* env vars
+// and uncomment the initialization code below.
+
+/*
 import { initializeApp } from 'firebase/app';
 
 const firebaseConfig = {
@@ -11,3 +16,4 @@ const firebaseConfig = {
 };
 
 export const firebaseApp = initializeApp(firebaseConfig);
+*/
