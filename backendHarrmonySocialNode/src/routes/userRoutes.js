@@ -19,4 +19,8 @@ router.get('/users/:id', auth, controller.get);
 router.put('/users/:id', auth, controller.update);
 router.delete('/users/:id', auth, controller.delete);
 
+// Geolocation routes (protected)
+router.get('/nearby-users', auth, controller.getNearbyUsers);
+router.post('/update-location', auth, controller.updateLocation);
+
 module.exports = router;

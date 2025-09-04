@@ -22,5 +22,28 @@ module.exports = {
     const token = jwt.sign({ sub: user._id, email: user.email }, JWT_SECRET, { expiresIn: '15m' });
     const refresh = jwt.sign({ sub: user._id }, JWT_SECRET, { expiresIn: '7d' });
     return { user, token, refresh };
+  },
+
+  // Obtiene usuarios cercanos a la ubicación especificada
+  getNearbyUsers: async (userId, lat, lng, maxDistanceKm = 5) => {
+    if (!userId || !lat || !lng) {
+      throw new Error('User ID, latitude, and longitude are required');
+    }
+    
+    return repo.findNearbyUsers(lat, lng, maxDistanceKm, userId);
+  },
+
+  // Actualiza la ubicación de un usuario
+  updateUserLocation: async (userId, lat, lng) => {
+    if (!userId || lat === undefined || lng === undefined) {
+      throw new Error('User ID, latitude, and longitude are required');
+    }
+
+    const updatedUser = await repo.updateLocation(userId, lat, lng);
+    if (!updatedUser) {
+      throw new Error('User not found');
+    }
+    
+    return updatedUser;
   }
 };

@@ -27,8 +27,17 @@ const extras = {
   },
   "home": {
     "title": "Home",
-    "welcome": "Welcome to HarmonySocial (empty home page)",
-    "logout": "Log out"
+    "welcome": "Welcome to HarmonySocial. Here you can see musicians near you.",
+    "logout": "Log out",
+    "mapTitle": "Nearby Users Map",
+    "nearbyUsers": "Nearby Users",
+    "loading": "Loading...",
+    "clickMapToUpdate": "Click on the map to update your location",
+    "locationError": "Error getting your location",
+    "browserLocationNotSupported": "Your browser does not support geolocation",
+    "fetchError": "Error fetching nearby users",
+    "noNearbyUsers": "No nearby users at the moment",
+    "artist": "Artist"
   }
 };
 
@@ -48,7 +57,16 @@ export const register_extra = {
   },
   "home": {
     "title": "Home",
-    "welcome": "Welcome to HarmonySocial (empty home page)",
-    "logout": "Log out"
+    "welcome": "Welcome to HarmonySocial. Here you can see musicians near you.",
+    "logout": "Log out",
+    "mapTitle": "Nearby Users Map",
+    "nearbyUsers": "Nearby Users",
+    "loading": "Loading...",
+    "clickMapToUpdate": "Click on the map to update your location",
+    "locationError": "Error getting your location",
+    "browserLocationNotSupported": "Your browser does not support geolocation",
+    "fetchError": "Error fetching nearby users",
+    "noNearbyUsers": "No nearby users at the moment",
+    "artist": "Artist"
   }
 };

@@ -28,7 +28,16 @@ export const extra = {
   },
   "home": {
     "title": "Inicio",
-    "welcome": "Bienvenido a HarmonySocial (página de inicio vacía)",
-    "logout": "Cerrar sesión"
+    "welcome": "Bienvenido a HarmonySocial. Aquí podrás ver a los músicos que están cerca de ti.",
+    "logout": "Cerrar sesión",
+    "mapTitle": "Mapa de usuarios cercanos",
+    "nearbyUsers": "Usuarios cercanos",
+    "loading": "Cargando...",
+    "clickMapToUpdate": "Haz clic en el mapa para actualizar tu ubicación",
+    "locationError": "Error al obtener tu ubicación",
+    "browserLocationNotSupported": "Tu navegador no soporta geolocalización",
+    "fetchError": "Error al buscar usuarios cercanos",
+    "noNearbyUsers": "No hay usuarios cercanos en este momento",
+    "artist": "Artista"
   }
 };
